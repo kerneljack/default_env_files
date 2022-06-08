@@ -1,0 +1,8 @@
+alias gs='git status'
+alias gp='git pull'
+alias gpu='git push'
+alias gc='git commit -a'
+alias gd='git diff'
+alias gb='git branch'
+alias gl='git log --oneline --decorate'
+

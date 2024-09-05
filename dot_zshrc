@@ -1,0 +1,18 @@
+source /opt/homebrew/opt/kube-ps1/share/kube-ps1.sh
+source /opt/homebrew/opt/zsh-git-prompt/zshrc.sh
+PS1='$(kube_ps1)'\ $(git_super_status)\ $PS1
+
+export PATH="~/.rd/bin:$PATH"
+
+if type brew &>/dev/null; then
+    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+    autoload -Uz compinit
+    compinit
+fi
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /opt/homebrew/share/zsh-navigation-tools/zsh-navigation-tools.plugin.zsh
+
+

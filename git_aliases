@@ -5,4 +5,4 @@ alias gc='git commit -a'
 alias gd='git diff'
 alias gb='git branch'
 alias gl='git log --oneline --decorate'
-
+alias ll='ls -l'

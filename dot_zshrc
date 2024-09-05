@@ -1,6 +1,7 @@
+
 source /opt/homebrew/opt/kube-ps1/share/kube-ps1.sh
-source /opt/homebrew/opt/zsh-git-prompt/zshrc.sh
-PS1='$(kube_ps1)'\ $(git_super_status)\ $PS1
+source ~/.zsh/git-prompt.zsh/git-prompt.zsh
+PS1='$(kube_ps1)'\ $PS1
 
 export PATH="~/.rd/bin:$PATH"
 

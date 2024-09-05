@@ -1,6 +1,7 @@
+# from https://github.com/woefe/git-prompt.zsh
+source ~/.zsh/git-prompt.zsh/git-prompt.zsh
 
 source /opt/homebrew/opt/kube-ps1/share/kube-ps1.sh
-source ~/.zsh/git-prompt.zsh/git-prompt.zsh
 PS1='$(kube_ps1)'\ $PS1
 
 export PATH="~/.rd/bin:$PATH"
